@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "jitar-microservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "standalone": "node --experimental-network-imports --experimental-fetch dist/jitar.js --config=jitar/standalone.json",
+    "repository": "node --experimental-network-imports --experimental-fetch dist/jitar.js --config=jitar/repository.json",
+    "gateway": "node --experimental-network-imports --experimental-fetch dist/jitar.js --config=jitar/gateway.json",
+    "order": "node --experimental-network-imports --experimental-fetch dist/jitar.js --config=jitar/node-order.json",
+    "delivery": "node --experimental-network-imports --experimental-fetch dist/jitar.js --config=jitar/node-delivery.json",
+    "delivery2": "node --experimental-network-imports --experimental-fetch dist/jitar.js --config=jitar/node-delivery2.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jitar-nodejs-server": "^0.2.2"
+  }
+}

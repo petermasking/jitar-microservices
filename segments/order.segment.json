@@ -1,0 +1,3 @@
+{
+    "./order/placeOrder.js": { "placeOrder": { "access": "public" } }
+}
